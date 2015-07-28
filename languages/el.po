@@ -1,0 +1,17 @@
+msgid "Register"
+msgstr "Εγγραφή"
+
+msgid "Login"
+msgstr "Συνδεση"
+
+msgid "My account"
+msgstr "Ο λογαριασμός μου"
+
+msgid "Logout"
+msgstr "Αποσύνδεση"
+
+msgid "Get your own account for the GFOSS sites"
+msgstr "Αποκτήστε το δικό σας λογαριασμό στα sites της ΕΕΛ/ΛΑΚ"
+
+msgid "View all GFOSS Workteams"
+msgstr "Δείτε όλες τις Ομάδες Εργασίας"
