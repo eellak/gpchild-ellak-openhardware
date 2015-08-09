@@ -58,7 +58,7 @@
 }
 .header-login {
 	float: right;
-	right: 100px;
+	right: 1.5em;
 	margin-top: 40px;
 	padding: 0;
 	position: absolute;;
@@ -122,7 +122,12 @@
 .social-link-flickr:hover a:before {
 	color: #ff0084;
 }
-
+.social-link-rss a:before {
+	content: "\f09e";
+}
+.social-link-rss:hover a:before {
+	color: #f58220;
+}
 .main-navigation,
 .main-navigation ul ul {
 	background-color: #7F171F;
@@ -191,10 +196,24 @@
 		width: 30%;
 	}
 }
-
+.site-info {
+    padding-top: 20px;
+    padding-right: 0px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    font-size: 14px;
+}
+.site-info a:hover {
+	color: #f1f1f1;
+}
 @media only screen and (max-width: 768px) {
 	.header-social-links {
 		float: left;
 		margin: 0 0 20px;
 	}
+	.header-login {
+        float: left;
+		margin: 0.5em 0 1em 5em;
+		position: relative;
+}
 }
