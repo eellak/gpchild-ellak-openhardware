@@ -1,0 +1,276 @@
+/*
+ Theme Name:   openhardware.ellak.gr (GeneratePress child)
+ Theme URI:    https://ellak.gr/
+ Description:  GeneratePress child theme for ellak.gr
+ Author:       GFOSS
+ Author URI:   https://ellak.gr/
+ Template:     generatepress
+ Version:      0.1
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  ellakgr
+*/
+
+/* Helper Classes */
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+
+/* Add the logo on top */
+.site-branding {
+	float: left;
+}
+.site-description {
+  font-family: inherit;
+  font-weight: bold;
+  text-transform: none;
+  font-size: 18px;
+  margin: 0 15px;
+}
+.main-title a {
+	background-color: transparent;
+	background: url('img/logo-hardware.png') 0 0 no-repeat;
+	text-indent: -9999px;
+	display: block;
+	height: 132px;
+	width: 450px;
+	border: 0;
+	overflow: hidden;
+	*text-indent: -9999px;
+}
+.main-title a:before {
+	content: "";
+	display: block;
+	width: 0;
+	height: 150%;
+}
+.header-widget {
+	float: right;
+	overflow: hidden;
+	max-width: 50%;
+	margin: 90px 35px 0 0;
+}
+.header-login {
+	float: right;
+	right: 0.5em;
+	margin-top: 0;
+	padding: 0;
+}
+.header-login a{
+	margin-right: 1em;
+	color: #fff;
+	font-weight: bold;
+}
+.header-login a:hover{
+	color: #3a3a3a;
+}
+/* Social links on header */
+.header-social-links {
+	float: right;
+	margin-top: 94px;
+}
+.social-links {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-family: FontAwesome;
+	font-size: 31px;
+}
+.social-links li {
+	float: left;
+	margin-left: 15px;
+}
+.social-links li:first-child {
+	margin-left: 0;
+}
+.social-links span {
+	display: none;
+}
+.social-link-facebook a:before {
+	content: "\f09a";
+}
+.social-link-facebook:hover a:before {
+	color: #3b5998;
+}
+.social-link-twitter a:before {
+	content: "\f099";
+}
+.social-link-twitter:hover a:before {
+	color: #00aced;
+}
+.social-link-github a:before {
+	content: "\f09b";
+}
+.social-link-github:hover a:before {
+	color: #4183c4;
+}
+.social-link-vimeo a:before {
+	content: "\f194";
+}
+.social-link-vimeo:hover a:before {
+	color: #45bbff;
+}
+.social-link-flickr a:before {
+	content: "\f16e";
+}
+.social-link-flickr:hover a:before {
+	color: #ff0084;
+}
+.social-link-rss a:before {
+	content: "\f09e";
+}
+.social-link-rss:hover a:before {
+	color: #f58220;
+}
+.social-link-opinion a:before {
+	content: "\f086";
+}
+.social-link-opinion:hover a:before {
+	color: #008080;
+}
+.main-navigation,
+.main-navigation ul ul {
+	background-color: #7F171F;
+}
+.main-navigation .main-nav ul li > a:hover,
+.main-navigation .main-nav ul li.sfHover > a,
+.main-navigation .main-nav ul ul li > a:hover,
+.main-navigation .main-nav ul ul li.sfHover > a {
+	background-color: #99454C;
+}
+.smooth_slider {
+	padding: 0 25px;
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 25px;
+}
+.smooth_slider .smooth_sliderb {
+	position: relative;
+	width: 95%;
+    text-align: justify;
+}
+.smooth_slider .smooth_slideri {
+    position: absolute;
+    width: 100% !important;
+    height: auto !important;
+    padding: 25px 15px;
+}
+.smooth_slider .smooth_slideri h2 {
+	padding: 0 15px;
+	text-align: left;
+}
+.smooth_slider .smooth_slideri span {
+	padding: 0 5px;
+	text-align: left;
+}
+.separate-containers .widget-area .widget_advanced_text {
+	padding: 40px 30px;
+}
+
+.post-image {
+	text-align: center;
+}
+
+.paging-navigation {
+	text-align: center;
+}
+.paging-navigation .page-numbers {
+	margin-right: 5px;
+}
+.paging-navigation .prev {
+	float: left;
+}
+.paging-navigation .next {
+	float: right;
+	margin-right: 0;
+}
+.paging-navigation .current {
+	font-weight: bold;
+}
+
+@media only screen and (min-width: 769px) {
+	#primary {
+		width: 70%;
+	}
+	#right-sidebar {
+		width: 30%;
+	}
+}
+.site-info {
+    padding-top: 20px;
+    padding-right: 0px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    font-size: 14px;
+}
+.site-info a:hover {
+	color: #f1f1f1;
+}
+.notify {
+  position: relative;
+  margin: 10px 0;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  display: block;
+  line-height: 24px;
+  padding: 20px;
+  font-weight: bold;
+}
+.notify-error {
+  color: #571111;
+  background-color: #FFFFFF;
+  border: 2px solid #f8831a !important;
+}
+.notify-error a {
+  color: #f8831a;
+  background-color: #FFFFFF;
+  font-size: 19px;
+}
+.notify-warning {
+  color: #6b3b17;
+  background-color: #FFFFFF;
+  border: 2px solid gray !important;
+}
+.notify-warning a {
+  color: gray;
+  background-color: #FFFFFF;
+  font-size: 20px;
+}
+.notify-success {
+  color: #566621;
+  background-color: #FFFFFF;
+  border: 2px solid #309ec5 !important;
+}
+.notify-success a {
+  color: #309ec5;
+  background-color: #FFFFFF;
+  font-size: 20px;
+}
+.notify-cc {
+  color: #566621;
+  background-color: #FFFFFF;
+  border: 2px solid #9bc70a !important;
+}
+.notify-cc a {
+  color: #9bc70a;
+  background-color: #FFFFFF;
+  font-size: 20px;
+}
+@media only screen and (max-width: 768px) {
+	.header-social-links {
+		float: left;
+		margin: 0 0 20px;
+	}
+	.header-login {
+		width: 100%;
+		display: block;
+		margin: 12px auto;
+	}
+}
