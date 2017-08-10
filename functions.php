@@ -61,6 +61,7 @@ function ellak_slider() {
 // social links
 add_action( 'generate_before_header_content', 'ellak_social_links' );
 function ellak_social_links() { ?>
+<<<<<<< HEAD
 	<div class="header-social-links">
 		<ul class="social-links">
 			<li class="social-link-opinion"><a href="https://ellak.gr/pite-mas-ti-gnomi-sas/" title="Πείτε μας τη γνώμη σας" target="_blank"><span>Πείτε μας τη γνώμη σας</span></a></li>
@@ -70,6 +71,31 @@ function ellak_social_links() { ?>
 			<li class="social-link-vimeo"><a href="https://www.vimeo.com/eellak" title="Vimeo" target="_blank"><span>Vimeo</span></a></li>
 			<li class="social-link-flickr"><a href="https://flickr.com/photos/eellak" title="Flickr" target="_blank"><span>Flickr</span></a></li>
 			<li class="social-link-rss"><a href="https://ellak.gr/rss-feeds/" title="RSS" target="_blank"><span>RSS</span></a></li>
+=======
+	<div class="header-login">
+				<?php if( is_user_logged_in() ): ?>
+				<a href="<?php echo esc_url( get_edit_user_link() ); ?>"><?php _e( 'Ο λογαριασμός μου', 'gpchild-ellak' ); ?></a>
+				<a href="<?php echo esc_url( wp_logout_url( get_permalink() ) ); ?>"><?php _e( 'Αποσύνδεση', 'gpchild-ellak' ); ?></a>
+
+				<?php else:
+
+					if( get_option( 'users_can_register' ) ): ?>
+				<a href="<?php echo esc_url( wp_registration_url() ); ?>"><?php _e( 'Εγγραφή', 'gpchild-ellak' ); ?></a>
+				<?php	endif; // get_option ?>
+
+				<a href="<?php echo esc_url( wp_login_url() ); ?>"><?php _e( 'Συνδεση', 'gpchild-ellak' ); ?></a>
+
+				<?php endif; // is_user_logged_in ?>
+			</div>
+	<div class="header-social-links">
+		<ul class="social-links">
+			<li class="social-link-facebook"><a href="https://www.facebook.com/eellak" target="_blank"><span>Facebook</span></a></li>
+			<li class="social-link-twitter"><a href="https://www.twitter.com/eellak" target="_blank"><span>Twitter</span></a></li>
+			<li class="social-link-github"><a href="https://github.com/eellak" target="_blank"><span>GitHub</span></a></li>
+			<li class="social-link-vimeo"><a href="https://www.vimeo.com/eellak" target="_blank"><span>Vimeo</span></a></li>
+			<li class="social-link-flickr"><a href="https://flickr.com/photos/eellak" target="_blank"><span>Flickr</span></a></li>
+			<li class="social-link-rss"><a href="https://ellak.gr/rss-feeds/" target="_blank"><span>RSS</span></a></li>
+>>>>>>> a7bc7f6159ee02569732676b695530f67a817458
 		</ul>
 	</div><!-- .header-social-links -->
 <?php }
@@ -96,5 +122,4 @@ function load_diadose_bar(){
         diadose_bar();
     }
 }
-
 ?>

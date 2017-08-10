@@ -68,6 +68,18 @@
 	font-weight: bold;
 }
 .header-login a:hover{
+/*=======
+	right: 1.5em;
+	margin-top: 40px;
+	padding: 0;
+	position: absolute;;
+}
+.site-header  .header-login a{
+	margin-right: 20px;
+	color: #0d72b2;
+}
+.site-header  .header-login a:hover{
+>>>>>>> a7bc7f6159ee02569732676b695530f67a817458*/
 	color: #3a3a3a;
 }
 /* Social links on header */
@@ -81,6 +93,9 @@
 	padding: 0;
 	font-family: FontAwesome;
 	font-size: 31px;
+/*=======
+	font-size: 24px;
+>>>>>>> a7bc7f6159ee02569732676b695530f67a817458*/
 }
 .social-links li {
 	float: left;
@@ -263,6 +278,7 @@
   background-color: #FFFFFF;
   font-size: 20px;
 }
+
 @media only screen and (max-width: 768px) {
 	.header-social-links {
 		float: left;
@@ -273,4 +289,10 @@
 		display: block;
 		margin: 12px auto;
 	}
+/*=======
+        float: left;
+		margin: 0.5em 0 1em 5em;
+		position: relative;
+}
+>>>>>>> a7bc7f6159ee02569732676b695530f67a817458*/
 }
